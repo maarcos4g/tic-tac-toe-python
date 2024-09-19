@@ -15,12 +15,12 @@ score = {player1: 0, player2: 0}
 
 def draw_board():
   os.system('cls')
-  print("   0    1   2")
-  print("0:  " + board[0][0] + " | " + board[0][1] + " | " + board[0][2])
+  print("   C0   C1   C2")
+  print("L0:  " + board[0][0] + " | " + board[0][1] + " | " + board[0][2])
   print("   -----------")
-  print("1:  " + board[1][0] + " | " + board[1][1] + " | " + board[1][2])
+  print("L1:  " + board[1][0] + " | " + board[1][1] + " | " + board[1][2])
   print("   -----------")
-  print("2:  " + board[2][0] + " | " + board[2][1] + " | " + board[2][2])
+  print("L2:  " + board[2][0] + " | " + board[2][1] + " | " + board[2][2])
   print("Jogadas: " + str(plays))
   
 
