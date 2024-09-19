@@ -32,11 +32,11 @@ def play():
   
   if plays < max_plays:
     try:
-      line = int(input(f'{current_player} em qual linha quer jogar? '))
+      line = int(input(f'{current_player}, em qual linha quer jogar? '))
       column = int(input(f'{current_player}, em qual coluna quer jogar? '))
       while board[line][column] != " ":
         print('Informe uma outra posição, essa já foi utilizada.')
-        line = int(input(f'{current_player} em qual linha quer jogar? '))
+        line = int(input(f'{current_player}, em qual linha quer jogar? '))
         column = int(input(f'{current_player}, em qual coluna quer jogar? '))
       board[line][column] = symbol
       who_play = 1 if who_play == 2 else 2
