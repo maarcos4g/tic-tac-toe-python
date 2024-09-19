@@ -1,8 +1,7 @@
 import os
 
-play_again = "S"
 plays = 0
-who_play = 2 # 1-Jogador 1  |  2-Jogador 2
+who_play = 1 # 1-Jogador 1  |  2-Jogador 2
 max_plays = 9
 board=[
   [" ", " ", " "],
@@ -102,7 +101,7 @@ def game():
         print('Empate!')
       save_result(winner)
       reset_game()
-      play_again = input('Deseja jogar novanmente? (S/N)')
+      play_again = input('Deseja jogar novamente? (S/N)')
       if (play_again.upper() != "S"):
         break
         
